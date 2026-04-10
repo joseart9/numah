@@ -69,7 +69,7 @@ export function Hero() {
             alt="Numah icon"
             width={80}
             height={80}
-            className="mx-auto mb-6 h-auto w-8 md:h-auto md:w-24"
+            className="mx-auto mb-6 h-auto w-24 md:h-auto md:w-24"
             priority
           />
         </motion.div>

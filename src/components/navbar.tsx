@@ -22,7 +22,7 @@ export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const { scrollY } = useScroll();
 
-  const paddingY = useTransform(scrollY, [0, 100], [0, 6]);
+  const paddingY = useTransform(scrollY, [0, 100], [0, 0]);
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     setScrolled(latest > 50);
