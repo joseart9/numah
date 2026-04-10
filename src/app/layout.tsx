@@ -16,30 +16,44 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Numah Coffee | Where Every Sip Feels Like Home",
+  title: "Numah Café | Donde Cada Trago Se Siente Como en Casa",
   description:
-    "Discover Numah — a premium coffee experience rooted in warmth, craftsmanship, and community. Specialty beans, artisan brews, and a space designed for connection.",
+    "Descubre Numah — una experiencia de café premium basada en el calor, la artesanía y la comunidad. Granos especiales, bebidas artesanales y un espacio diseñado para la conexión.",
   keywords: [
-    "numah coffee",
-    "specialty coffee",
-    "artisan coffee",
-    "coffee shop",
+    "numah café",
+    "café premium",
+    "artesanía",
+    "café shop",
     "premium coffee",
     "craft coffee",
+    "café",
+    "café en monterrey",
+    "café en san pedro",
+    "café en san pedro garza garcia",
+    "café en san pedro garza garcia garcia",
+    "cafeteria numah",
+    "cafeteria numah monterrey",
+    "cafeteria numah san pedro",
+    "cafeteria numah san pedro garza garcia",
+    "cafeteria numah san pedro garza garcia garcia",
+    "cafeteria numah monterrey",
+    "cafeteria numah san pedro",
+    "cafeteria numah san pedro garza garcia",
+    "cafeteria numah san pedro garza garcia garcia",
   ],
   openGraph: {
-    title: "Numah Coffee | Where Every Sip Feels Like Home",
+    title: "Numah Café | Donde Cada Trago Se Siente Como en Casa",
     description:
-      "Discover Numah — a premium coffee experience rooted in warmth, craftsmanship, and community.",
+      "Descubre Numah — una experiencia de café premium basada en el calor, la artesanía y la comunidad.",
     type: "website",
-    locale: "en_US",
-    siteName: "Numah Coffee",
+    locale: "es_ES",
+    siteName: "Numah Café",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Numah Coffee | Where Every Sip Feels Like Home",
+    title: "Numah Café | Donde Cada Trago Se Siente Como en Casa",
     description:
-      "Discover Numah — a premium coffee experience rooted in warmth, craftsmanship, and community.",
+      "Descubre Numah — una experiencia de café premium basada en el calor, la artesanía y la comunidad.",
   },
 };
 
@@ -50,7 +64,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="es"
       className={`${dmSerifDisplay.variable} ${plusJakartaSans.variable} h-full antialiased bg-primary`}
     >
       <body className="min-h-full flex flex-col font-body bg-primary">
