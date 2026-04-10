@@ -19,21 +19,22 @@ export function Newsletter() {
             alt=""
             width={56}
             height={56}
-            className="mx-auto mb-6 h-12 w-12 opacity-60"
+            className="mx-auto mb-6 h-auto w-16 opacity-60"
             aria-hidden="true"
           />
         </ScrollReveal>
 
         <ScrollReveal delay={0.1}>
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-primary leading-tight">
-            Join the Numah Family
+            Únete a la Familia Numah
           </h2>
         </ScrollReveal>
 
         <ScrollReveal delay={0.2}>
           <p className="mt-4 text-primary/60 text-lg max-w-lg mx-auto leading-relaxed">
-            Be the first to know about seasonal blends, community events, and
-            exclusive offers. No spam — just warmth in your inbox.
+            Sé el primero en saber sobre bebidas de temporada, eventos
+            comunitarios, y ofertas exclusivas. Sin spam — solo calor en tu
+            bandeja de entrada.
           </p>
         </ScrollReveal>
 
@@ -43,7 +44,7 @@ export function Newsletter() {
             className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3 max-w-md mx-auto"
           >
             <label htmlFor="email-input" className="sr-only">
-              Email address
+              Dirección de correo electrónico
             </label>
             <input
               id="email-input"
@@ -56,15 +57,15 @@ export function Newsletter() {
               type="submit"
               className="w-full sm:w-auto rounded-full bg-primary px-8 py-3.5 text-sm font-semibold text-secondary transition-all duration-300 hover:shadow-xl hover:shadow-primary/15 hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap"
             >
-              Subscribe
+              Suscribirse
             </button>
           </form>
         </ScrollReveal>
 
         <ScrollReveal delay={0.4}>
           <p className="mt-4 text-primary/40 text-xs">
-            By subscribing, you agree to our Privacy Policy. Unsubscribe
-            anytime.
+            Al suscribirte, aceptas nuestras Políticas de Privacidad.
+            Desuscribirte en cualquier momento.
           </p>
         </ScrollReveal>
       </div>

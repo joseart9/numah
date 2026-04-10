@@ -15,7 +15,9 @@ export function Hero() {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
+    setTimeout(() => {
+      setMounted(true);
+    }, 100);
   }, []);
 
   const bgY = useTransform(scrollY, [0, 800], [0, 300]);
@@ -67,7 +69,7 @@ export function Hero() {
             alt="Numah icon"
             width={80}
             height={80}
-            className="mx-auto mb-6 h-16 w-16 md:h-20 md:w-20"
+            className="mx-auto mb-6 h-auto w-8 md:h-auto md:w-24"
             priority
           />
         </motion.div>
@@ -78,9 +80,9 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.2, ease: [0.25, 0.1, 0.25, 1] }}
           className="font-display text-5xl md:text-7xl lg:text-8xl text-primary leading-[1.05] tracking-tight"
         >
-          Where Every Sip
+          Donde Cada Café
           <br />
-          <span className="text-accent-light">Feels Like Home</span>
+          <span className="text-accent-light">Siente Como en Casa</span>
         </motion.h1>
 
         <motion.p
@@ -89,8 +91,8 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
           className="mt-6 md:mt-8 text-lg md:text-xl text-primary/70 max-w-2xl mx-auto leading-relaxed font-light"
         >
-          Hand-crafted specialty coffee, ethically sourced beans, and a space
-          designed for warmth and genuine connection. Welcome to Numah.
+          Granos especiales, bebidas artesanales y un espacio diseñado para la
+          conexión. Bienvenido a Numah.
         </motion.p>
 
         <motion.div
@@ -104,7 +106,7 @@ export function Hero() {
             onClick={handleScrollToMenu}
             className="group relative inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-base font-semibold text-secondary transition-all duration-300 hover:shadow-2xl hover:shadow-primary/20 hover:scale-[1.02] active:scale-[0.98]"
           >
-            View Menu
+            Menu
             <svg
               className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
               fill="none"
@@ -129,19 +131,9 @@ export function Hero() {
             }}
             className="inline-flex items-center gap-2 rounded-full border border-primary/30 px-8 py-4 text-base font-medium text-primary/90 transition-all duration-300 hover:border-primary/60 hover:bg-primary/5"
           >
-            Our Story
+            Nosotros
           </a>
         </motion.div>
-      </motion.div>
-
-      <motion.div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10"
-        animate={{ y: [0, 8, 0] }}
-        transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-      >
-        <div className="w-6 h-10 rounded-full border-2 border-primary/40 flex justify-center pt-2">
-          <div className="w-1 h-2.5 rounded-full bg-primary/60" />
-        </div>
       </motion.div>
     </section>
   );

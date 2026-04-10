@@ -3,9 +3,9 @@
 import { ScrollReveal } from "./scroll-reveal";
 
 const hours = [
-  { day: "Monday — Friday", time: "7:00 AM — 8:00 PM" },
-  { day: "Saturday", time: "8:00 AM — 9:00 PM" },
-  { day: "Sunday", time: "8:00 AM — 6:00 PM" },
+  { day: "Lunes — Viernes", time: "7:00 AM — 8:00 PM" },
+  { day: "Sábado", time: "8:00 AM — 9:00 PM" },
+  { day: "Domingo", time: "8:00 AM — 6:00 PM" },
 ];
 
 export function Location() {
@@ -14,10 +14,10 @@ export function Location() {
       <div className="mx-auto max-w-7xl px-6">
         <ScrollReveal className="text-center mb-16 md:mb-20">
           <span className="inline-block text-sm font-semibold text-accent tracking-widest uppercase mb-4">
-            Visit Us
+            Visítanos
           </span>
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-secondary leading-tight">
-            Find Your Way Home
+            Encuentra Tu Camino a Casa
           </h2>
         </ScrollReveal>
 
@@ -25,14 +25,14 @@ export function Location() {
           <ScrollReveal animation="slideInLeft">
             <div className="overflow-hidden rounded-2xl shadow-lg shadow-secondary/5">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.8154867754483!2d-80.19362!3d25.77427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b6823dce1111%3A0x1111111111111111!2sMiami%2C+FL!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2614.8209637051223!2d-100.2412571!3d25.5752141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662c7797c82c03b%3A0xde4eaad60258ff66!2sThe%20Village%20At%20La%20Rioja!5e1!3m2!1ses-419!2smx!4v1775864173142!5m2!1ses-419!2smx"
                 width="100%"
                 height="400"
                 className="border-0 w-full"
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Numah Coffee shop location"
+                title="Numah Café ubicación"
               />
             </div>
           </ScrollReveal>
@@ -63,12 +63,10 @@ export function Location() {
                   </div>
                   <div>
                     <h3 className="font-display text-xl text-secondary mb-1">
-                      Address
+                      Dirección
                     </h3>
                     <p className="text-foreground-muted leading-relaxed">
-                      123 Brickell Avenue, Suite 100
-                      <br />
-                      Miami, FL 33131
+                      The Village At La Rioja
                     </p>
                   </div>
                 </div>
@@ -93,7 +91,7 @@ export function Location() {
                   </div>
                   <div>
                     <h3 className="font-display text-xl text-secondary mb-3">
-                      Opening Hours
+                      Horarios de Apertura
                     </h3>
                     <ul className="space-y-2.5">
                       {hours.map((item) => (
@@ -133,12 +131,12 @@ export function Location() {
                   </div>
                   <div>
                     <h3 className="font-display text-xl text-secondary mb-1">
-                      Contact
+                      Contacto
                     </h3>
                     <p className="text-foreground-muted leading-relaxed">
                       hello@numahcoffee.com
                       <br />
-                      +1 (305) 555-0142
+                      +52 81 1234 5678
                     </p>
                   </div>
                 </div>

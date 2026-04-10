@@ -65,7 +65,7 @@ export function Navbar() {
             alt="Numah Coffee"
             width={120}
             height={48}
-            className="h-22 w-auto transition-opacity duration-300 object-contain"
+            className="h-22 w-auto transition-opacity duration-300 object-cover"
             priority
           />
         </a>
@@ -97,7 +97,7 @@ export function Navbar() {
               : "bg-primary text-secondary hover:bg-primary/90 hover:shadow-primary/20"
           }`}
         >
-          Order Now
+          Menu
         </a>
 
         <button
@@ -152,7 +152,7 @@ export function Navbar() {
                 onClick={(e) => handleNavClick(e, "#menu")}
                 className="block text-center rounded-full bg-secondary px-6 py-3 text-sm font-semibold text-primary"
               >
-                Order Now
+                Menu
               </a>
             </li>
           </ul>

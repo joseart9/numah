@@ -1,23 +1,18 @@
 import Image from "next/image";
 
 const footerLinks = {
-  Company: [
-    { label: "About Us", href: "#about" },
-    { label: "Our Story", href: "#about" },
-    { label: "Careers", href: "#" },
-    { label: "Press", href: "#" },
+  Empresa: [
+    { label: "Nosotros", href: "#about" },
+    { label: "Nuestra Historia", href: "#about" },
   ],
   Menu: [
-    { label: "Coffee", href: "#menu" },
-    { label: "Seasonal Specials", href: "#menu" },
-    { label: "Food", href: "#menu" },
-    { label: "Merchandise", href: "#" },
+    { label: "Menú", href: "#menu" },
+    { label: "Especiales de Temporada", href: "#menu" },
+    { label: "Comida", href: "#menu" },
   ],
-  Connect: [
-    { label: "Contact", href: "#contact" },
-    { label: "Location", href: "#location" },
-    { label: "Events", href: "#" },
-    { label: "FAQ", href: "#" },
+  Conectar: [
+    { label: "Contacto", href: "#contact" },
+    { label: "Ubicación", href: "#location" },
   ],
 };
 
@@ -62,11 +57,11 @@ export function Footer() {
               alt="Numah Coffee"
               width={140}
               height={56}
-              className="h-12 w-auto mb-5"
+              className="h-22 w-auto mb-5"
             />
             <p className="text-primary/50 text-sm leading-relaxed max-w-xs">
-              Where every sip feels like home. Specialty coffee roasted with
-              care, served with warmth.
+              Donde Cada Trago Se Siente Como en Casa. Granos especiales,
+              bebidas artesanales y un espacio diseñado para la conexión.
             </p>
             <div className="flex gap-3 mt-6">
               {socials.map((social) => (
@@ -105,8 +100,8 @@ export function Footer() {
 
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-primary/30">
-            &copy; {new Date().getFullYear()} Numah Coffee. All rights
-            reserved.
+            &copy; {new Date().getFullYear()} Numah Café. Todos los derechos
+            reservados.
           </p>
           <div className="flex gap-6">
             <a

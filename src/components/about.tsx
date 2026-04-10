@@ -5,25 +5,25 @@ import { ScrollReveal } from "./scroll-reveal";
 
 const cards = [
   {
-    title: "Crafted with Intention",
+    title: "Hecho con Intención",
     description:
-      "Every cup at Numah begins with a story — beans sourced directly from family farms across Colombia, Ethiopia, and Guatemala. Our roasters work in small batches to unlock flavors that honor the origin and the grower.",
+      "Cada taza de Numah comienza con una historia — granos obtenidos directamente de granjas familiares en Colombia, Etiopía y Guatemala. Nuestros tostadores trabajan en lotes pequeños para desbloquear sabores que honren la origen y el cultivador.",
     image:
       "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80",
     alt: "Barista carefully pouring latte art in a ceramic cup",
   },
   {
-    title: "A Space to Belong",
+    title: "Un espacio para pertenecer",
     description:
-      "Numah isn't just a coffee shop — it's a living room for the neighborhood. Warm wood tones, natural light, and curated greenery create an atmosphere where you can slow down, reconnect, and feel at ease.",
+      "Numah no es solo una cafetería — es una sala de estar para el vecindario. Tonos de madera cálida, luz natural y vegetación cuidada crean un ambiente donde puedes desacelerar, reconectarte y sentirte cómodo.",
     image:
       "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&q=80",
     alt: "Warm and inviting coffee shop interior with natural light",
   },
   {
-    title: "Rooted in Community",
+    title: "Raíz en la comunidad",
     description:
-      "From hosting local artists to partnering with nearby bakeries, Numah is built on the belief that great coffee brings people together. We're more than a brand — we're your neighbors.",
+      "Desde alojar artistas locales hasta asociarse con panaderías cercanas, Numah se basa en la creencia de que el café grande une a la gente. Somos más que una marca — somos tus vecinos.",
     image:
       "https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=800&q=80",
     alt: "Community gathering at a cozy coffee shop",
@@ -36,10 +36,10 @@ export function About() {
       <div className="mx-auto max-w-7xl px-6">
         <ScrollReveal className="text-center mb-16 md:mb-24">
           <span className="inline-block text-sm font-semibold text-accent tracking-widest uppercase mb-4">
-            The Numah Experience
+            La experiencia Numah
           </span>
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-secondary leading-tight">
-            More Than Just Coffee
+            Más que solo café
           </h2>
         </ScrollReveal>
 
@@ -74,7 +74,7 @@ export function About() {
                         className="inline-flex items-center gap-2 text-sm font-semibold text-secondary group"
                       >
                         <span className="border-b border-secondary/30 group-hover:border-secondary transition-colors duration-300">
-                          Discover more
+                          Descubre más
                         </span>
                         <svg
                           className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
