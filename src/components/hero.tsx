@@ -61,15 +61,29 @@ export function Hero() {
       >
         <motion.div
           initial={shouldAnimate ? { opacity: 0, scale: 0.8 } : false}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
+          animate={{
+            opacity: 1,
+            scale: 1,
+            rotate: shouldAnimate ? [10, -10] : 0,
+          }}
+          transition={{
+            duration: 0.8,
+            ease: [0.25, 0.1, 0.25, 1],
+            rotate: {
+              duration: 2.5,
+              repeat: Infinity,
+              repeatType: "mirror",
+              ease: "easeInOut",
+              delay: 1,
+            },
+          }}
         >
           <Image
             src="/isotype-primary.png"
             alt="Numah icon"
             width={80}
             height={80}
-            className="mx-auto mb-6 h-auto w-24 md:h-auto md:w-24"
+            className="mx-auto mb-6 h-auto w-24 md:h-auto md:w-28"
             priority
           />
         </motion.div>
