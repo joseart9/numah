@@ -210,9 +210,9 @@ body.is-ready .floater { animation: popIn .9s var(--spring) var(--fd, .8s) both;
 @keyframes bob { 0%, 100% { transform: translateY(0) rotate(var(--r1, -6deg)); } 50% { transform: translateY(-14px) rotate(var(--r2, 6deg)); } }
 .fl-1 { left: -2%; top: 4%; --fd: .7s; --bob: 4.6s; }
 .fl-2 { right: -2%; top: 0%; width: 22%; --fd: .8s; --bob: 5.4s; --r1: 4deg; --r2: -8deg; }
-.fl-3 { right: -6%; top: 42%; width: 26%; --fd: .9s; --bob: 6s; }
-.fl-4 { left: -6%; top: 46%; width: 20%; --fd: 1s; --bob: 4.2s; --r1: 8deg; --r2: -4deg; }
-.fl-5 { left: 16%; bottom: -4%; width: 22%; --fd: 1.1s; --bob: 5.2s; }
+.fl-3 { right: -7%; top: 60%; width: 22%; --fd: .9s; --bob: 6s; }
+.fl-4 { left: -10%; top: 44%; width: 20%; --fd: 1s; --bob: 4.2s; --r1: 8deg; --r2: -4deg; }
+.fl-5 { left: 12%; bottom: -7%; width: 22%; --fd: 1.1s; --bob: 5.2s; }
 .fl-6 { right: 12%; bottom: -6%; width: 24%; --fd: 1.2s; --bob: 4.8s; --r1: -2deg; --r2: 10deg; }
 
 .hero-scroll {
