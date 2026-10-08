@@ -443,7 +443,7 @@ body.is-ready .floater { animation: popIn .9s var(--spring) var(--fd, .8s) both;
 }
 
 /* ---------- Visítanos ---------- */
-.visit { padding: 24px 0 120px; }
+.visit { padding: 112px 0 120px; }
 .visit-in { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 56px; align-items: center; }
 .visit-copy { display: flex; flex-direction: column; gap: 18px; align-items: flex-start; }
 address { font-style: normal; }
@@ -486,7 +486,7 @@ address { font-style: normal; }
 @keyframes ring { 0% { transform: scale(.4); opacity: 1; } 100% { transform: scale(1.6); opacity: 0; } }
 .map-pin-label { margin-top: 26px; padding: 6px 12px; border-radius: 999px; background: var(--cream-50); font: 600 13px/1 var(--font-display); color: var(--green-800); box-shadow: var(--shadow-soft); }
 @media (max-width: 860px) {
-  .visit { padding: 8px 0 88px; }
+  .visit { padding: 72px 0 88px; }
   .visit-in { grid-template-columns: minmax(0, 1fr); gap: 36px; }
   .map { height: 320px; }
   .visit-hours { min-width: 0; width: 100%; }
