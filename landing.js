@@ -580,10 +580,10 @@
         // stacked (mobile/tablet) hero: no scroll drift, the art sits right under the CTAs
         const drift = stackedHero.matches ? 0 : 1;
         depthEls.forEach(el => {
+          if (el.classList.contains('floater')) return; // floating drawings stay put: no mouse or scroll parallax
           const d = +el.dataset.depth;
-          const m = el.classList.contains('floater') ? 0 : 1; // floating drawings ignore the mouse, only drift on scroll
-          el.style.setProperty('--px', (pp.x * d * 50 * m).toFixed(2) + 'px');
-          el.style.setProperty('--py', (pp.y * d * 50 * m - y * d * .18 * drift).toFixed(2) + 'px');
+          el.style.setProperty('--px', (pp.x * d * 50).toFixed(2) + 'px');
+          el.style.setProperty('--py', (pp.y * d * 50 - y * d * .18 * drift).toFixed(2) + 'px');
         });
       }
       const a = badgeAnim();
