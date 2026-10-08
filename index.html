@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>numah · café sin prisa</title>
+<meta name="description" content="Specialty coffee en Monterrey. Café, matcha, smoothies, pan del día y algo rico para la tarde.">
+<meta name="theme-color" content="#36583c">
+<link rel="icon" type="image/png" href="assets/logo/numah-isotipo-green.png">
+<link rel="preload" href="fonts/Shrikhand-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/Fredoka-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="landing.css">
+</head>
+<body class="is-loading">
+
+<!-- Intro curtain -->
+<div class="intro" aria-hidden="true">
+  <img class="intro-iso" src="assets/logo/numah-isotipo-cream.png" alt="">
+  <span class="intro-word">sin prisa</span>
+</div>
+
+<div class="cursor" aria-hidden="true"><span class="cursor-label"></span></div>
+
+<!-- Header -->
+<header class="nav" data-nav>
+  <div class="nav-in">
+    <a href="#top" class="nav-logo" aria-label="numah, inicio"><img src="assets/logo/numah-horizontal-green.png" alt="numah"></a>
+    <nav class="nav-links" aria-label="Principal">
+      <a href="#favoritos">Favoritos</a>
+      <a href="#menu">Menú</a>
+      <a href="#club" hidden>Club</a>
+      <a href="#visitanos">Visítanos</a>
+    </nav>
+    <a class="btn btn-primary btn-sm nav-cta" href="#visitanos" data-magnet>Cómo llegar</a>
+    <button class="nav-burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mnav"><span></span><span></span></button>
+  </div>
+  <div class="nav-progress" aria-hidden="true"><span></span></div>
+</header>
+
+<!-- Mobile menu -->
+<div class="mnav" id="mnav" aria-hidden="true">
+  <div class="mnav-pattern" aria-hidden="true"></div>
+  <nav class="mnav-links" aria-label="Móvil">
+    <a href="#favoritos" style="--i:0">favoritos</a>
+    <a href="#menu" style="--i:1">menú</a>
+    <a href="#club" style="--i:2" hidden>club</a>
+    <a href="#visitanos" style="--i:2">visítanos</a>
+  </nav>
+  <img class="mnav-iso" src="assets/logo/numah-isotipo-cream.png" alt="">
+</div>
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="hero-pattern" aria-hidden="true"></div>
+    <div class="hero-in">
+      <div class="hero-copy">
+        <span class="overline hero-over anim-up" style="--d:.05s">Café · Matcha · Smoothies · Monterrey</span>
+        <h1 class="hero-title" data-split>café sin prisa.</h1>
+        <p class="hero-lede anim-up" style="--d:.75s">Tostamos en pequeños lotes y horneamos cada mañana. Ven por lo de siempre, o atrévete con algo nuevo.</p>
+        <div class="hero-ctas anim-up" style="--d:.9s">
+          <a class="btn btn-cream btn-lg" href="#menu" data-magnet>Ver el menú</a>
+          <a class="btn btn-outline-cream btn-lg" href="#antojo" data-magnet>¿qué se te antoja?</a>
+        </div>
+      </div>
+
+      <div class="hero-art" data-parallax>
+        <svg class="hero-badge" viewBox="0 0 200 200" aria-hidden="true">
+          <defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+          <text textLength="486" lengthAdjust="spacing"><textPath href="#circ" textLength="486" lengthAdjust="spacing">hecho con calma · monterrey · café sin prisa · </textPath></text>
+        </svg>
+        <button class="hero-iso-wrap" type="button" aria-label="Haz clic en el sol de numah" data-depth="0.35">
+          <img class="hero-iso" src="assets/logo/numah-isotipo-cream.png" alt="">
+        </button>
+        <span class="floater fl-1" data-depth="1.1"><i style="--img:url(assets/illustrations/menu/latte.png)"></i></span>
+        <span class="floater fl-2" data-depth="0.8"><i style="--img:url(assets/illustrations/menu/concha-vainilla.png)"></i></span>
+        <span class="floater fl-3" data-depth="1.4"><i style="--img:url(assets/illustrations/menu/matcha-latte.png)"></i></span>
+        <span class="floater fl-4" data-depth="0.6"><i style="--img:url(assets/illustrations/menu/chocochip-cookie.png)"></i></span>
+        <span class="floater fl-5" data-depth="1.2"><i style="--img:url(assets/illustrations/menu/mango-matcha.png)"></i></span>
+        <span class="floater fl-6" data-depth="0.9"><i style="--img:url(assets/illustrations/menu/turkey-croissant.png)"></i></span>
+      </div>
+    </div>
+
+    <a class="hero-scroll" href="#favoritos" aria-label="Bajar a favoritos">
+      <span>desliza</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+    </a>
+    <div class="wave" aria-hidden="true"></div>
+  </section>
+
+  <!-- Ticker -->
+  <section class="ticker" aria-label="Lo que hacemos">
+    <div class="ticker-row r1" data-ticker="1"><div class="ticker-track">
+      <span>espresso</span><img src="assets/logo/numah-isotipo-cream.png" alt=""><span>matcha</span><img src="assets/logo/numah-isotipo-cream.png" alt=""><span>conchas</span><img src="assets/logo/numah-isotipo-cream.png" alt=""><span>smoothies</span><img src="assets/logo/numah-isotipo-cream.png" alt=""><span>pan del día</span><img src="assets/logo/numah-isotipo-cream.png" alt="">
+    </div></div>
+    <div class="ticker-row r2" data-ticker="-1"><div class="ticker-track">
+      <span>sin prisa</span><img src="assets/logo/numah-isotipo-green.png" alt=""><span>lo de siempre</span><img src="assets/logo/numah-isotipo-green.png" alt=""><span>keto, también</span><img src="assets/logo/numah-isotipo-green.png" alt=""><span>refreshers</span><img src="assets/logo/numah-isotipo-green.png" alt="">
+    </div></div>
+  </section>
+
+  <!-- Favoritos -->
+  <section class="favs" id="favoritos">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="overline reveal">Lo más pedido</span>
+          <h2 class="h2 reveal" data-split-words>los favoritos de la casa</h2>
+        </div>
+        <div class="favs-ctrl reveal">
+          <button class="icon-btn" type="button" data-rail-prev aria-label="Anterior"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></button>
+          <button class="icon-btn" type="button" data-rail-next aria-label="Siguiente"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
+        </div>
+      </div>
+    </div>
+    <div class="rail" data-rail data-cursor="arrastra"></div>
+  </section>
+
+  <!-- Manifesto -->
+  <section class="mani" aria-label="Nuestra manera">
+    <p class="mani-text" data-scrub>
+      Tostamos en pequeños lotes <span class="mani-pic" style="--img:url(assets/illustrations/menu/espresso.png)"></span>, horneamos cada mañana <span class="mani-pic alt" style="--img:url(assets/illustrations/menu/concha-chocolate.png)"></span> y servimos sin prisa. Aquí el café se toma con calma, <em>aunque tu día no.</em>
+    </p>
+  </section>
+
+  <!-- Antojo / shuffle -->
+  <section class="antojo" id="antojo">
+    <div class="wrap antojo-in">
+      <div class="antojo-copy">
+        <span class="overline reveal">¿No sabes qué pedir?</span>
+        <h2 class="h2 reveal" data-split-words>deja que el café decida</h2>
+        <p class="reveal">Dale al botón y te sugerimos algo del menú. Si no te convence, otra vez. Nadie está contando.</p>
+        <button class="btn btn-primary btn-lg reveal" type="button" data-shuffle data-magnet>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/></svg>
+          Sorpréndeme
+        </button>
+      </div>
+      <div class="slot reveal" aria-live="polite">
+        <div class="slot-tile" data-slot-tile>
+          <img class="slot-img" data-slot-img src="assets/illustrations/menu/latte.png" alt="">
+          <span class="slot-burst" aria-hidden="true"></span>
+        </div>
+        <div class="slot-meta">
+          <span class="slot-cat" data-slot-cat>Latte</span>
+          <span class="slot-name" data-slot-name>Latte</span>
+          <span class="slot-desc" data-slot-desc>Espresso con leche vaporizada, suave y cremoso.</span>
+          <span class="slot-price" data-slot-price>$70</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menú -->
+  <section class="menu" id="menu">
+    <div class="menu-pattern" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="overline overline-cream reveal">Todo lo que hacemos</span>
+          <h2 class="h2 h2-cream reveal" data-split-words>el menú</h2>
+        </div>
+        <span class="badge badge-sage reveal">Precios de ejemplo · por confirmar</span>
+      </div>
+      <div class="tabs reveal" role="tablist" aria-label="Categorías" data-tabs>
+        <span class="tabs-ind" aria-hidden="true"></span>
+      </div>
+      <div class="menu-grid" data-menu-grid role="tabpanel"></div>
+    </div>
+  </section>
+
+  <!-- Club -->
+  <!-- Club Numah: hidden for now (client did not request it). Remove the `hidden` attributes here and on the two "Club" nav links to bring it back. -->
+  <section class="club" id="club" hidden>
+    <div class="wrap club-in">
+      <div class="club-copy">
+        <span class="overline reveal">Club Numah</span>
+        <h2 class="h2 reveal" data-split-words>junta sellos, gana café</h2>
+        <p class="reveal">Cada bebida suma un sello. Al décimo, tu café va por nuestra cuenta. Pide tu tarjeta en barra, es gratis.</p>
+        <div class="club-note reveal"><b data-stamp-count>0</b> de 10 · <span>Tres más y tu café va por nuestra cuenta.</span></div>
+      </div>
+      <div class="stampcard reveal" data-stampcard>
+        <div class="stampcard-head">
+          <img src="assets/logo/numah-wordmark-green.png" alt="numah">
+          <span>tarjeta de sellos</span>
+        </div>
+        <div class="stamps" data-stamps></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visítanos -->
+  <section class="visit" id="visitanos">
+    <div class="wrap visit-in">
+      <div class="visit-copy">
+        <span class="overline reveal">Visítanos</span>
+        <h2 class="h2 reveal" data-split-words>te esperamos en barra</h2>
+        <div class="reveal">
+          <div class="visit-store">The Village At La Rioja</div>
+          <div class="visit-addr">Av. Cervera del Río 85, Privadas Residenciales, La Rioja, 64988 Monterrey, N.L.</div>
+        </div>
+        <div class="visit-hours reveal">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <div><b>Horario</b><span>Por confirmar</span></div>
+        </div>
+        <a class="btn btn-primary btn-lg reveal" data-magnet target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Av.%20Cervera%20del%20R%C3%ADo%2085%2C%20La%20Rioja%2C%20Monterrey%2C%20N.L.">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          Cómo llegar
+        </a>
+      </div>
+
+      <div class="map reveal" role="img" aria-label="Mapa ilustrado de The Village">
+        <span class="map-block b1"></span><span class="map-block b2"></span><span class="map-block b3"></span><span class="map-block b4"></span>
+        <span class="map-road r-v1"></span>
+        <span class="map-road r-v2"></span>
+        <span class="map-road r-h"><i class="map-dash"></i><i class="map-car"></i></span>
+        <span class="map-label">Av. Cervera del Río</span>
+        <span class="map-tree t1"></span><span class="map-tree t2"></span><span class="map-tree t3"></span>
+        <div class="map-pin">
+          <span class="map-pin-ring"></span>
+          <span class="map-pin-body"><img src="assets/logo/numah-isotipo-cream.png" alt=""></span>
+          <span class="map-pin-label">The Village</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="foot">
+  <div class="foot-pattern" aria-hidden="true"></div>
+  <div class="wrap foot-in">
+    <p class="foot-line reveal">tu café te espera.</p>
+    <div class="foot-social reveal">
+      <a class="btn btn-outline-cream btn-sm" href="#" data-magnet>Instagram</a>
+      <a class="btn btn-outline-cream btn-sm" href="#" data-magnet>TikTok</a>
+      <a class="btn btn-outline-cream btn-sm" href="#" data-magnet>WhatsApp</a>
+    </div>
+  </div>
+  <div class="foot-word" aria-hidden="true"><img src="assets/logo/numah-wordmark-cream.png" alt=""></div>
+  <div class="wrap foot-legal">
+    <span>Hecho con calma en Monterrey</span>
+    <span>© 2026 Numah · Monterrey, N.L.</span>
+  </div>
+</footer>
+
+<!-- Mobile sticky CTA -->
+<a class="mcta" href="#menu" aria-hidden="true" tabindex="-1">
+  <img src="assets/logo/numah-isotipo-cream.png" alt="">
+  Ver el menú
+</a>
+
+<script src="data.js"></script>
+<script src="landing.js"></script>
+</body>
+</html>

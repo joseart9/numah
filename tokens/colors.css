@@ -1,0 +1,27 @@
+:root{
+/* Brand — from Numah Sistema de Logotipo (Mix&Brand it, 2025) */
+--numah-military-green:#36583c; /* Pantone P 144-16 U */
+--numah-fresh-cream:#fcf9f1;    /* Pantone P 1-1 U */
+
+/* Green ramp (derived from Military Green) */
+--green-950:#16261a;--green-900:#1f3524;--green-800:#2a4630;--green-700:#36583c;--green-600:#4a6e50;--green-500:#6a8a6f;--green-400:#8fa893;--green-300:#b4c6b5;--green-200:#d3dfd2;--green-100:#e6ede3;
+
+/* Cream ramp (derived from Fresh Cream) */
+--cream-50:#fcf9f1;--cream-100:#f6f0e3;--cream-200:#ece3cf;--cream-300:#ddd0b5;--cream-400:#c4b494;
+
+/* Supporting — pulled from the brand moodboard (latte foam, croissant) */
+--latte-300:#ead3b2;--latte-500:#c99d6b;--espresso-700:#6b4429;--espresso-900:#3d2618;
+--croissant-500:#c47a2c;--croissant-200:#f1d6ae;
+--terracotta-500:#b4553d;--terracotta-100:#f4ddd3;
+
+/* Semantic — foreground */
+--fg-1:var(--green-900);--fg-2:#4b5d4e;--fg-3:#7d8a7e;--fg-on-green:var(--cream-50);--fg-on-green-2:var(--green-200);--fg-brand:var(--green-700);
+/* Semantic — surfaces */
+--bg-page:var(--cream-50);--bg-sunken:var(--cream-100);--surface-card:#fffdf8;--surface-muted:var(--cream-100);--surface-brand:var(--green-700);--surface-brand-deep:var(--green-800);--surface-sage:var(--green-100);--surface-latte:var(--latte-300);
+/* Semantic — borders */
+--border-1:var(--cream-300);--border-2:var(--cream-200);--border-strong:var(--green-700);--border-focus:var(--green-600);
+/* Semantic — interactive */
+--action-primary:var(--green-700);--action-primary-hover:var(--green-800);--action-primary-press:var(--green-900);--action-secondary:var(--cream-100);--action-secondary-hover:var(--cream-200);
+/* Semantic — status */
+--status-success:var(--green-600);--status-success-bg:var(--green-100);--status-warning:var(--croissant-500);--status-warning-bg:var(--croissant-200);--status-danger:var(--terracotta-500);--status-danger-bg:var(--terracotta-100);--status-info:var(--espresso-700);--status-info-bg:var(--latte-300);
+}

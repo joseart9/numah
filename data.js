@@ -1,0 +1,60 @@
+(() => {
+  const L = (cat, name, desc, price, extra) => ({ cat, name, desc, price, img: 'menu/' + name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/ /g, '-'), tone: 'sage', ...extra });
+  window.NUMAH_LANDING = {
+    cats: ['Espresso', 'Latte', 'Smoothies', 'Refreshers', 'Salty', 'Sweet but fit', 'Sweet', 'Extras'],
+    items: [
+      L('Espresso', 'Espresso', 'Doble shot de la casa, corto y directo.', 45),
+      L('Espresso', 'Americano', 'Espresso alargado con agua caliente.', 55),
+      L('Espresso', 'Cortado', 'Espresso con un poco de leche.', 55),
+      L('Espresso', 'Cappuccino', 'Espresso, leche y mucha espuma.', 65),
+      L('Latte', 'Latte', 'Espresso con leche vaporizada, suave y cremoso.', 70),
+      L('Latte', 'Vanilla Latte', 'Nuestro latte con un toque de vainilla.', 80),
+      L('Latte', 'Matcha Latte', 'Matcha batido con leche: terroso, verde y suave.', 80),
+      L('Latte', 'Chai Latte', 'Té chai especiado con leche vaporizada.', 75),
+      L('Latte', 'Taro Milk', 'Taro cremoso con leche, dulce y color lila.', 80),
+      L('Latte', 'Mocha', 'Espresso, cacao y leche para la tarde.', 80),
+      L('Latte', 'Protein Macchiato', 'Espresso con leche y un scoop de proteína.', 90),
+      L('Latte', 'Flat White', 'Espresso con microespuma sedosa y poca leche.', 70),
+      L('Smoothies', 'Mango Matcha', 'Mango, matcha y leche, bien frío.', 95),
+      L('Smoothies', 'Strawberry Vanilla', 'Fresa y vainilla, cremoso.', 95),
+      L('Smoothies', 'Choco Banana', 'Plátano, cacao y chocolate.', 95),
+      L('Smoothies', 'Berry Maca', 'Frutos rojos con maca.', 99),
+      L('Refreshers', 'Lemon Berry', 'Limón y frutos rojos con hielo.', 75),
+      L('Refreshers', 'Tropical Mango', 'Mango y un toque tropical.', 75),
+      L('Refreshers', 'Green Mint', 'Hierbabuena, limón y hielo.', 75),
+      L('Refreshers', 'Citrus Peach', 'Durazno y cítricos.', 75),
+      L('Salty', 'Grilled Cheese', 'Pan dorado con queso fundido.', 110, { name: 'Grilled Cheese Sandwich' }),
+      L('Salty', 'Turkey Croissant', 'Croissant con pavo y hojas verdes.', 125),
+      L('Salty', 'Avocado Toast', 'Pan de masa madre con aguacate.', 120),
+      L('Salty', 'Salmon Toast', 'Salmón, queso crema y eneldo.', 145),
+      L('Salty', 'Numah Panini', 'Panini de la casa, queso y jitomate.', 130),
+      L('Salty', 'Mediterranean Wrap', 'Wrap con verduras, aceitunas y jitomate.', 125),
+      L('Salty', 'Greek Salad', 'Pepino, jitomate, aceitunas y feta.', 125),
+      L('Salty', 'Chicken Pesto Bowl', 'Pollo, pesto, granos y verduras.', 145),
+      L('Sweet but fit', 'Overnight Oats', 'Avena reposada con fruta.', 85),
+      L('Sweet but fit', 'Yogurt Bowl', 'Yogurt, granola y frutos rojos.', 90),
+      L('Sweet but fit', 'Protein Cookie', 'Galleta con proteína y chispas.', 55),
+      L('Sweet but fit', 'Protein Brownie', 'Brownie con proteína.', 60),
+      L('Sweet but fit', 'Keto Lemon Pie', 'Pay de limón sin azúcar.', 75),
+      L('Sweet but fit', 'Keto Blueberry Muffin', 'Muffin de mora azul sin azúcar.', 60),
+      L('Sweet but fit', 'Keto Chocolate Cake', 'Pastel de chocolate sin azúcar.', 80),
+      L('Sweet', 'Chocochip Cookie', 'Galleta con chispas de chocolate.', 45),
+      L('Sweet', 'Concha Vainilla', 'Concha clásica de vainilla.', 35),
+      L('Sweet', 'Concha Chocolate', 'Concha de chocolate.', 35),
+      L('Sweet', 'Brownie', 'Brownie húmedo de chocolate.', 55),
+      L('Sweet', 'Banana Bread', 'Pan de plátano, rebanada.', 55),
+      L('Sweet', 'Carrot Cake', 'Pastel de zanahoria con betún.', 75),
+      L('Sweet', 'Pistachio Cake', 'Pastel de pistache.', 80),
+      L('Sweet', 'Tiramisu', 'Mascarpone, café y cacao.', 80),
+      L('Extras', 'Shot Espresso', 'Agrega un shot a cualquier bebida.', 15, { name: 'Shot de espresso' }),
+      L('Extras', 'Scoop Proteina', 'Un scoop de proteína.', 20, { name: 'Scoop de proteína' }),
+      L('Extras', 'Leche Vegetal', 'Avena o almendra.', 10, { name: 'Leche vegetal' }),
+    ],
+    store: { name: 'The Village At La Rioja', addr: 'Av. Cervera del Río 85, Privadas Residenciales, La Rioja, 64988 Monterrey, N.L.' },
+  };
+  const ING={Espresso:['Espresso doble'],Americano:['Espresso','Agua caliente'],Cortado:['Espresso','Leche'],Cappuccino:['Espresso','Leche','Espuma'],Latte:['Espresso','Leche vaporizada'],'Vanilla Latte':['Espresso','Leche','Vainilla'],'Matcha Latte':['Matcha','Leche'],'Chai Latte':['Té chai','Especias','Leche'],'Taro Milk':['Taro','Leche'],Mocha:['Espresso','Cacao','Leche'],'Protein Macchiato':['Espresso','Leche','Proteína'],'Flat White':['Espresso','Microespuma'],'Mango Matcha':['Mango','Matcha','Leche'],'Strawberry Vanilla':['Fresa','Vainilla','Leche'],'Choco Banana':['Plátano','Cacao','Leche'],'Berry Maca':['Frutos rojos','Maca'],'Lemon Berry':['Limón','Frutos rojos','Hielo'],'Tropical Mango':['Mango','Piña','Hielo'],'Green Mint':['Menta','Limón','Hielo'],'Citrus Peach':['Durazno','Naranja','Hielo']};
+  const PROF={Espresso:[[20,'Dulzor'],[45,'Acidez'],[90,'Intensidad']],Latte:[[45,'Dulzor'],[20,'Acidez'],[55,'Intensidad']],Smoothies:[[70,'Dulzor'],[30,'Acidez'],[80,'Frescura']],Refreshers:[[40,'Dulzor'],[60,'Acidez'],[100,'Frescura']]};
+  const TEMP={Espresso:['Caliente'],Latte:['Caliente','Frío'],Smoothies:['Frío'],Refreshers:['Frío']};
+  const SIZES={Espresso:null,Latte:[['Chico',0],['Mediano',10],['Grande',20]],Smoothies:[['Mediano',0],['Grande',15]],Refreshers:[['Chico',0],['Mediano',10],['Grande',20]]};
+  window.NUMAH_LANDING.items.forEach(i=>{i.ingredients=ING[i.name];i.profile=PROF[i.cat];i.temp=TEMP[i.cat];i.sizes=SIZES[i.cat];i.drink=!!PROF[i.cat];});
+})();
