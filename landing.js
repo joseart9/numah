@@ -7,7 +7,7 @@
   const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
   const rand = (a, b) => a + Math.random() * (b - a);
   const pick = (arr) => arr[Math.floor(Math.random() * arr.length)];
-  const illu = (img) => 'assets/illustrations/' + img + '.png';
+  const illu = (img) => 'assets/illustrations/' + img + '.webp';
   const SPRING = 'cubic-bezier(.34,1.56,.64,1)';
   const DATA = window.NUMAH_LANDING;
   const TONES = ['sage', 'latte', 'cream'];
@@ -19,11 +19,13 @@
     document.body.classList.remove('is-loading');
     setTimeout(() => { const i = $('.intro'); i && i.remove(); }, 1300);
   };
-  if (RM) ready();
+  let seen = false;
+  try { seen = sessionStorage.getItem('numah-intro') === '1'; sessionStorage.setItem('numah-intro', '1'); } catch (e) {}
+  if (RM || seen) { const i = $('.intro'); i && i.remove(); ready(); }
   else {
-    const minWait = new Promise(r => setTimeout(r, 1050));
+    const minWait = new Promise(r => setTimeout(r, 750));
     const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
-    Promise.race([Promise.all([minWait, fonts]), new Promise(r => setTimeout(r, 2400))]).then(ready);
+    Promise.race([Promise.all([minWait, fonts]), new Promise(r => setTimeout(r, 1600))]).then(ready);
   }
 
   /* ---------- Particles ---------- */
@@ -63,7 +65,6 @@
   const title = $('[data-split]');
   if (title) {
     const text = title.textContent.trim();
-    title.setAttribute('aria-label', text);
     title.textContent = '';
     let ci = 0;
     text.split(' ').forEach((word, wi) => {
@@ -182,8 +183,8 @@
     const c = document.createElement('article');
     c.className = 'fcard pre';
     c.style.setProperty('--tilt', (i % 2 ? 2 : -2) + 'deg');
-    c.innerHTML = `<div class="fcard-tile tone-${TONES[i % 3]}"><img src="${illu(it.img)}" alt="" loading="lazy">${badge ? `<span class="badge badge-cream">${badge}</span>` : ''}</div>
-      <div class="fcard-body"><span class="fcard-name">${it.name}</span><span class="fcard-desc">${it.desc}</span></div>
+    c.innerHTML = `<div class="fcard-tile tone-${TONES[i % 3]}"><img src="${illu(it.img)}" alt="Ilustración de ${it.name}" width="480" height="480" loading="lazy" decoding="async">${badge ? `<span class="badge badge-cream">${badge}</span>` : ''}</div>
+      <div class="fcard-body"><h3 class="fcard-name">${it.name}</h3><span class="fcard-desc">${it.desc}</span></div>
       <div class="fcard-foot"><span class="price">$${it.price}</span><button class="heart" type="button" aria-pressed="false" aria-label="Me gusta ${it.name}">${heartSVG}</button></div>`;
     rail.appendChild(c);
   });
@@ -269,6 +270,11 @@
       });
     };
     splitInto(mani);
+    new IntersectionObserver((e, io) => {
+      if (!e[0].isIntersecting) return;
+      $$('[data-img]', mani).forEach(p => p.style.setProperty('--img', `url(${p.dataset.img})`));
+      io.disconnect();
+    }, { rootMargin: '300px' }).observe(mani);
   }
 
   /* ---------- Antojo shuffle ---------- */
@@ -326,8 +332,8 @@
     const list = DATA.items.filter(i => i.cat === activeCat);
     grid.setAttribute('aria-label', activeCat);
     grid.innerHTML = list.map((it, i) => `<article class="mcard" style="--ci:${i};--cr:${i % 2 ? -5 : 5}deg">
-      <div class="mcard-tile tone-${TONES[i % 3]}"><img src="${illu(it.img)}" alt="" loading="lazy"></div>
-      <div class="mcard-body"><span class="mcard-name">${it.name}</span><span class="mcard-desc">${it.desc}</span></div>
+      <div class="mcard-tile tone-${TONES[i % 3]}"><img src="${illu(it.img)}" alt="Ilustración de ${it.name}" width="480" height="480" loading="lazy" decoding="async"></div>
+      <div class="mcard-body"><h3 class="mcard-name">${it.name}</h3><span class="mcard-desc">${it.desc}</span></div>
       <span class="price">$${it.price}</span></article>`).join('');
   };
   function selectCat(cat) {
@@ -350,13 +356,13 @@
   /* ---------- Club stamps ---------- */
   const stampsEl = $('[data-stamps]'), card = $('[data-stampcard]'), countEl = $('[data-stamp-count]'), noteEl = $('.club-note span');
   const WORDS = ['Cero', 'Uno', 'Dos', 'Tres', 'Cuatro', 'Cinco', 'Seis', 'Siete', 'Ocho', 'Nueve', 'Diez'];
-  const iso = 'assets/logo/numah-isotipo-cream.png';
+  const iso = 'assets/logo/numah-isotipo-cream.webp';
   for (let i = 0; i < 10; i++) {
     const s = document.createElement('button');
     s.type = 'button';
     s.className = 'stamp' + (i === 9 ? ' free' : '');
     s.setAttribute('aria-label', i === 9 ? 'Sello 10, café gratis' : 'Sello ' + (i + 1));
-    s.innerHTML = (i === 9 ? '<span>gratis</span>' : '') + `<span class="ink"><img src="${iso}" alt=""></span>`;
+    s.innerHTML = (i === 9 ? '<span>gratis</span>' : '') + `<span class="ink"><img src="${iso}" alt="" loading="lazy"></span>`;
     stampsEl.appendChild(s);
   }
   const stamps = $$('.stamp', stampsEl);

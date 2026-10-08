@@ -22,6 +22,13 @@ Then open http://localhost:5173.
 
 Vercel serves the repo root as-is; `vercel.json` sets the framework to "Other" with no install/build step.
 
+## SEO
+
+- Canonical domain: `https://numah.com/` (canonical, Open Graph, JSON-LD, `robots.txt`, `sitemap.xml`). Change it in all of those if the domain changes.
+- Structured data: `CafeOrCoffeeShop` + `WebSite` + `WebPage` JSON-LD in `index.html`, including the menu (no prices yet). Add `openingHoursSpecification`, `telephone`, `geo` and `sameAs` (Instagram/TikTok) once they're confirmed.
+- `og-image.png` (1200×630) is the share preview; `apple-touch-icon.png`, `icon-*.png`, `favicon-64.png` and `site.webmanifest` are the icons.
+- Images are WebP. Decorative masks (doodle pattern, hero floaters) load after the intro so they don't delay first paint.
+
 ## Notes
 
 - The "Club Numah" section is hidden (`hidden` attribute on the section and its two nav links in `index.html`).

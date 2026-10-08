@@ -1,22 +1,425 @@
 <!doctype html>
-<html lang="es">
+<html lang="es-MX">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>numah · café sin prisa</title>
-<meta name="description" content="Specialty coffee en Monterrey. Café, matcha, smoothies, pan del día y algo rico para la tarde.">
+<title>Numah · Cafetería de especialidad en Monterrey, La Rioja</title>
+<meta name="description" content="Café de especialidad, matcha, smoothies y pan del día en The Village At La Rioja, Monterrey. Tostamos en pequeños lotes y horneamos cada mañana.">
+<link rel="canonical" href="https://numah.com/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="theme-color" content="#36583c">
-<link rel="icon" type="image/png" href="assets/logo/numah-isotipo-green.png">
+<meta name="geo.region" content="MX-NLE">
+<meta name="geo.placename" content="Monterrey, Nuevo León">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Numah">
+<meta property="og:locale" content="es_MX">
+<meta property="og:url" content="https://numah.com/">
+<meta property="og:title" content="Numah · café sin prisa en Monterrey">
+<meta property="og:description" content="Cafetería de especialidad en La Rioja, Monterrey. Café, matcha, smoothies y pan del día.">
+<meta property="og:image" content="https://numah.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Logo de Numah sobre fondo verde con el texto café sin prisa">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Numah · café sin prisa en Monterrey">
+<meta name="twitter:description" content="Cafetería de especialidad en La Rioja, Monterrey. Café, matcha, smoothies y pan del día.">
+<meta name="twitter:image" content="https://numah.com/og-image.png">
+
+<link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
 <link rel="preload" href="fonts/Shrikhand-400-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/Fredoka-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/Figtree-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/Figtree-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="tokens/fonts.css">
+<link rel="stylesheet" href="tokens/colors.css">
+<link rel="stylesheet" href="tokens/typography.css">
+<link rel="stylesheet" href="tokens/spacing.css">
+<link rel="stylesheet" href="tokens/base.css">
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="landing.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebSite",
+   "@id": "https://numah.com/#website",
+   "url": "https://numah.com/",
+   "name": "Numah",
+   "inLanguage": "es-MX",
+   "publisher": {
+    "@id": "https://numah.com/#cafe"
+   }
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://numah.com/#webpage",
+   "url": "https://numah.com/",
+   "name": "Numah · Cafetería de especialidad en Monterrey, La Rioja",
+   "isPartOf": {
+    "@id": "https://numah.com/#website"
+   },
+   "about": {
+    "@id": "https://numah.com/#cafe"
+   },
+   "primaryImageOfPage": "https://numah.com/og-image.png",
+   "inLanguage": "es-MX"
+  },
+  {
+   "@type": "CafeOrCoffeeShop",
+   "@id": "https://numah.com/#cafe",
+   "name": "Numah",
+   "url": "https://numah.com/",
+   "description": "Cafetería de especialidad en The Village At La Rioja, Monterrey. Café tostado en pequeños lotes, matcha, smoothies, refreshers, opciones keto y pan horneado cada mañana.",
+   "slogan": "café sin prisa.",
+   "logo": "https://numah.com/icon-512.png",
+   "image": [
+    "https://numah.com/og-image.png",
+    "https://numah.com/icon-512.png"
+   ],
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Cervera del Río 85, Privadas Residenciales, The Village At La Rioja",
+    "addressLocality": "Monterrey",
+    "addressRegion": "N.L.",
+    "postalCode": "64988",
+    "addressCountry": "MX"
+   },
+   "areaServed": {
+    "@type": "City",
+    "name": "Monterrey"
+   },
+   "servesCuisine": [
+    "Café de especialidad",
+    "Matcha",
+    "Smoothies",
+    "Panadería",
+    "Desayunos",
+    "Postres keto"
+   ],
+   "priceRange": "$$",
+   "currenciesAccepted": "MXN",
+   "hasMap": "https://www.google.com/maps/search/?api=1&query=Av.%20Cervera%20del%20R%C3%ADo%2085%2C%20La%20Rioja%2C%20Monterrey%2C%20N.L.",
+   "hasMenu": {
+    "@type": "Menu",
+    "name": "Menú Numah",
+    "inLanguage": "es-MX",
+    "hasMenuSection": [
+     {
+      "@type": "MenuSection",
+      "name": "Espresso",
+      "hasMenuItem": [
+       {
+        "@type": "MenuItem",
+        "name": "Espresso",
+        "description": "Doble shot de la casa, corto y directo.",
+        "image": "https://numah.com/assets/illustrations/menu/espresso.webp"
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Americano",
+        "description": "Espresso alargado con agua caliente.",
+        "image": "https://numah.com/assets/illustrations/menu/americano.webp"
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Cortado",
+        "description": "Espresso con un poco de leche.",
+        "image": "https://numah.com/assets/illustrations/menu/cortado.webp"
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Cappuccino",
+        "description": "Espresso, leche y mucha espuma.",
+        "image": "https://numah.com/assets/illustrations/menu/cappuccino.webp"
+       }
+      ]
+     },
+     {
+      "@type": "MenuSection",
+      "name": "Latte",
+      "hasMenuItem": [
+       {
+        "@type": "MenuItem",
+        "name": "Latte",
+        "description": "Espresso con leche vaporizada, suave y cremoso.",
+        "image": "https://numah.com/assets/illustrations/menu/latte.webp"
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Vanilla Latte",
+        "description": "Nuestro latte con un toque de vainilla.",
+        "image": "https://numah.com/assets/illustrations/menu/vanilla-latte.webp"
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Matcha Latte",
+        "description": "Matcha batido con leche: terroso, verde y suave.",
+        "image": "https://numah.com/assets/illustrations/menu/matcha-latte.webp"
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Chai Latte",
+        "description": "Té chai especiado con leche vaporizada.",
+        "image": "https://numah.com/assets/illustrations/menu/chai-latte.webp"
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Taro Milk",
+        "description": "Taro cremoso con leche, dulce y color lila.",
+        "image": "https://numah.com/assets/illustrations/menu/taro-milk.webp"
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Mocha",
+        "description": "Espresso, cacao y leche para la tarde.",
+        "image": "https://numah.com/assets/illustrations/menu/mocha.webp"
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Protein Macchiato",
+        "description": "Espresso con leche y un scoop de proteína.",
+        "image": "https://numah.com/assets/illustrations/menu/protein-macchiato.webp"
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Flat White",
+        "description": "Espresso con microespuma sedosa y poca leche.",
+        "image": "https://numah.com/assets/illustrations/menu/flat-white.webp"
+       }
+      ]
+     },
+     {
+      "@type": "MenuSection",
+      "name": "Smoothies",
+      "hasMenuItem": [
+       {
+        "@type": "MenuItem",
+        "name": "Mango Matcha",
+        "description": "Mango, matcha y leche, bien frío.",
+        "image": "https://numah.com/assets/illustrations/menu/mango-matcha.webp"
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Strawberry Vanilla",
+        "description": "Fresa y vainilla, cremoso.",
+        "image": "https://numah.com/assets/illustrations/menu/strawberry-vanilla.webp"
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Choco Banana",
+        "description": "Plátano, cacao y chocolate.",
+        "image": "https://numah.com/assets/illustrations/menu/choco-banana.webp"
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Berry Maca",
+        "description": "Frutos rojos con maca.",
+        "image": "https://numah.com/assets/illustrations/menu/berry-maca.webp"
+       }
+      ]
+     },
+     {
+      "@type": "MenuSection",
+      "name": "Refreshers",
+      "hasMenuItem": [
+       {
+        "@type": "MenuItem",
+        "name": "Lemon Berry",
+        "description": "Limón y frutos rojos con hielo.",
+        "image": "https://numah.com/assets/illustrations/menu/lemon-berry.webp"
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Tropical Mango",
+        "description": "Mango y un toque tropical.",
+        "image": "https://numah.com/assets/illustrations/menu/tropical-mango.webp"
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Green Mint",
+        "description": "Hierbabuena, limón y hielo.",
+        "image": "https://numah.com/assets/illustrations/menu/green-mint.webp"
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Citrus Peach",
+        "description": "Durazno y cítricos.",
+        "image": "https://numah.com/assets/illustrations/menu/citrus-peach.webp"
+       }
+      ]
+     },
+     {
+      "@type": "MenuSection",
+      "name": "Salty",
+      "hasMenuItem": [
+       {
+        "@type": "MenuItem",
+        "name": "Grilled Cheese Sandwich",
+        "description": "Pan dorado con queso fundido.",
+        "image": "https://numah.com/assets/illustrations/menu/grilled-cheese.webp"
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Turkey Croissant",
+        "description": "Croissant con pavo y hojas verdes.",
+        "image": "https://numah.com/assets/illustrations/menu/turkey-croissant.webp"
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Avocado Toast",
+        "description": "Pan de masa madre con aguacate.",
+        "image": "https://numah.com/assets/illustrations/menu/avocado-toast.webp"
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Salmon Toast",
+        "description": "Salmón, queso crema y eneldo.",
+        "image": "https://numah.com/assets/illustrations/menu/salmon-toast.webp"
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Numah Panini",
+        "description": "Panini de la casa, queso y jitomate.",
+        "image": "https://numah.com/assets/illustrations/menu/numah-panini.webp"
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Mediterranean Wrap",
+        "description": "Wrap con verduras, aceitunas y jitomate.",
+        "image": "https://numah.com/assets/illustrations/menu/mediterranean-wrap.webp"
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Greek Salad",
+        "description": "Pepino, jitomate, aceitunas y feta.",
+        "image": "https://numah.com/assets/illustrations/menu/greek-salad.webp"
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Chicken Pesto Bowl",
+        "description": "Pollo, pesto, granos y verduras.",
+        "image": "https://numah.com/assets/illustrations/menu/chicken-pesto-bowl.webp"
+       }
+      ]
+     },
+     {
+      "@type": "MenuSection",
+      "name": "Sweet but fit",
+      "hasMenuItem": [
+       {
+        "@type": "MenuItem",
+        "name": "Overnight Oats",
+        "description": "Avena reposada con fruta.",
+        "image": "https://numah.com/assets/illustrations/menu/overnight-oats.webp"
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Yogurt Bowl",
+        "description": "Yogurt, granola y frutos rojos.",
+        "image": "https://numah.com/assets/illustrations/menu/yogurt-bowl.webp"
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Protein Cookie",
+        "description": "Galleta con proteína y chispas.",
+        "image": "https://numah.com/assets/illustrations/menu/protein-cookie.webp"
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Protein Brownie",
+        "description": "Brownie con proteína.",
+        "image": "https://numah.com/assets/illustrations/menu/protein-brownie.webp"
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Keto Lemon Pie",
+        "description": "Pay de limón sin azúcar.",
+        "image": "https://numah.com/assets/illustrations/menu/keto-lemon-pie.webp"
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Keto Blueberry Muffin",
+        "description": "Muffin de mora azul sin azúcar.",
+        "image": "https://numah.com/assets/illustrations/menu/keto-blueberry-muffin.webp"
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Keto Chocolate Cake",
+        "description": "Pastel de chocolate sin azúcar.",
+        "image": "https://numah.com/assets/illustrations/menu/keto-chocolate-cake.webp"
+       }
+      ]
+     },
+     {
+      "@type": "MenuSection",
+      "name": "Sweet",
+      "hasMenuItem": [
+       {
+        "@type": "MenuItem",
+        "name": "Chocochip Cookie",
+        "description": "Galleta con chispas de chocolate.",
+        "image": "https://numah.com/assets/illustrations/menu/chocochip-cookie.webp"
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Concha Vainilla",
+        "description": "Concha clásica de vainilla.",
+        "image": "https://numah.com/assets/illustrations/menu/concha-vainilla.webp"
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Concha Chocolate",
+        "description": "Concha de chocolate.",
+        "image": "https://numah.com/assets/illustrations/menu/concha-chocolate.webp"
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Brownie",
+        "description": "Brownie húmedo de chocolate.",
+        "image": "https://numah.com/assets/illustrations/menu/brownie.webp"
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Banana Bread",
+        "description": "Pan de plátano, rebanada.",
+        "image": "https://numah.com/assets/illustrations/menu/banana-bread.webp"
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Carrot Cake",
+        "description": "Pastel de zanahoria con betún.",
+        "image": "https://numah.com/assets/illustrations/menu/carrot-cake.webp"
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Pistachio Cake",
+        "description": "Pastel de pistache.",
+        "image": "https://numah.com/assets/illustrations/menu/pistachio-cake.webp"
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Tiramisu",
+        "description": "Mascarpone, café y cacao.",
+        "image": "https://numah.com/assets/illustrations/menu/tiramisu.webp"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
+</script>
 </head>
 <body class="is-loading">
 
 <!-- Intro curtain -->
 <div class="intro" aria-hidden="true">
-  <img class="intro-iso" src="assets/logo/numah-isotipo-cream.png" alt="">
+  <img class="intro-iso" src="assets/logo/numah-isotipo-cream.webp" alt="">
   <span class="intro-word">sin prisa</span>
 </div>
 
@@ -25,7 +428,7 @@
 <!-- Header -->
 <header class="nav" data-nav>
   <div class="nav-in">
-    <a href="#top" class="nav-logo" aria-label="numah, inicio"><img src="assets/logo/numah-horizontal-green.png" alt="numah"></a>
+    <a href="#top" class="nav-logo" aria-label="numah, inicio"><img src="assets/logo/numah-horizontal-green.webp" alt="numah"></a>
     <nav class="nav-links" aria-label="Principal">
       <a href="#favoritos">Favoritos</a>
       <a href="#menu">Menú</a>
@@ -47,7 +450,7 @@
     <a href="#club" style="--i:2" hidden>club</a>
     <a href="#visitanos" style="--i:2">visítanos</a>
   </nav>
-  <img class="mnav-iso" src="assets/logo/numah-isotipo-cream.png" alt="">
+  <img class="mnav-iso" src="assets/logo/numah-isotipo-cream.webp" alt="" loading="lazy" decoding="async">
 </div>
 
 <main>
@@ -57,10 +460,12 @@
     <div class="hero-pattern" aria-hidden="true"></div>
     <div class="hero-in">
       <div class="hero-copy">
-        <span class="overline hero-over anim-up" style="--d:.05s">Café · Matcha · Smoothies · Monterrey</span>
-        <h1 class="hero-title" data-split>café sin prisa.</h1>
-        <p class="hero-lede anim-up" style="--d:.75s">Tostamos en pequeños lotes y horneamos cada mañana. Ven por lo de siempre, o atrévete con algo nuevo.</p>
-        <div class="hero-ctas anim-up" style="--d:.9s">
+        <h1 class="hero-h1" aria-label="Numah, cafetería de especialidad en Monterrey: café sin prisa.">
+          <span class="overline hero-over anim-up" style="--d:.05s" aria-hidden="true">Cafetería de especialidad · Monterrey</span>
+          <span class="hero-title" data-split aria-hidden="true">café sin prisa.</span>
+        </h1>
+        <p class="hero-lede anim-up" style="--d:.2s">Café de especialidad, matcha y pan del día en La Rioja, Monterrey. Tostamos en pequeños lotes y horneamos cada mañana. Ven por lo de siempre, o atrévete con algo nuevo.</p>
+        <div class="hero-ctas anim-up" style="--d:.35s">
           <a class="btn btn-cream btn-lg" href="#menu" data-magnet>Ver el menú</a>
           <a class="btn btn-outline-cream btn-lg" href="#antojo" data-magnet>¿qué se te antoja?</a>
         </div>
@@ -72,14 +477,14 @@
           <text textLength="486" lengthAdjust="spacing"><textPath href="#circ" textLength="486" lengthAdjust="spacing">hecho con calma · monterrey · café sin prisa · </textPath></text>
         </svg>
         <button class="hero-iso-wrap" type="button" aria-label="Haz clic en el sol de numah" data-depth="0.35">
-          <img class="hero-iso" src="assets/logo/numah-isotipo-cream.png" alt="">
+          <img class="hero-iso" src="assets/logo/numah-isotipo-cream.webp" alt="">
         </button>
-        <span class="floater fl-1" data-depth="1.1"><i style="--img:url(assets/illustrations/menu/latte.png)"></i></span>
-        <span class="floater fl-2" data-depth="0.8"><i style="--img:url(assets/illustrations/menu/concha-vainilla.png)"></i></span>
-        <span class="floater fl-3" data-depth="1.4"><i style="--img:url(assets/illustrations/menu/matcha-latte.png)"></i></span>
-        <span class="floater fl-4" data-depth="0.6"><i style="--img:url(assets/illustrations/menu/chocochip-cookie.png)"></i></span>
-        <span class="floater fl-5" data-depth="1.2"><i style="--img:url(assets/illustrations/menu/mango-matcha.png)"></i></span>
-        <span class="floater fl-6" data-depth="0.9"><i style="--img:url(assets/illustrations/menu/turkey-croissant.png)"></i></span>
+        <span class="floater fl-1" data-depth="1.1"><i style="--img:url(assets/illustrations/menu/latte.webp)"></i></span>
+        <span class="floater fl-2" data-depth="0.8"><i style="--img:url(assets/illustrations/menu/concha-vainilla.webp)"></i></span>
+        <span class="floater fl-3" data-depth="1.4"><i style="--img:url(assets/illustrations/menu/matcha-latte.webp)"></i></span>
+        <span class="floater fl-4" data-depth="0.6"><i style="--img:url(assets/illustrations/menu/chocochip-cookie.webp)"></i></span>
+        <span class="floater fl-5" data-depth="1.2"><i style="--img:url(assets/illustrations/menu/mango-matcha.webp)"></i></span>
+        <span class="floater fl-6" data-depth="0.9"><i style="--img:url(assets/illustrations/menu/turkey-croissant.webp)"></i></span>
       </div>
     </div>
 
@@ -93,10 +498,10 @@
   <!-- Ticker -->
   <section class="ticker" aria-label="Lo que hacemos">
     <div class="ticker-row r1" data-ticker="1"><div class="ticker-track">
-      <span>espresso</span><img src="assets/logo/numah-isotipo-cream.png" alt=""><span>matcha</span><img src="assets/logo/numah-isotipo-cream.png" alt=""><span>conchas</span><img src="assets/logo/numah-isotipo-cream.png" alt=""><span>smoothies</span><img src="assets/logo/numah-isotipo-cream.png" alt=""><span>pan del día</span><img src="assets/logo/numah-isotipo-cream.png" alt="">
+      <span>espresso</span><img src="assets/logo/numah-isotipo-cream.webp" alt="" loading="lazy" decoding="async"><span>matcha</span><img src="assets/logo/numah-isotipo-cream.webp" alt="" loading="lazy" decoding="async"><span>conchas</span><img src="assets/logo/numah-isotipo-cream.webp" alt="" loading="lazy" decoding="async"><span>smoothies</span><img src="assets/logo/numah-isotipo-cream.webp" alt="" loading="lazy" decoding="async"><span>pan del día</span><img src="assets/logo/numah-isotipo-cream.webp" alt="" loading="lazy" decoding="async">
     </div></div>
     <div class="ticker-row r2" data-ticker="-1"><div class="ticker-track">
-      <span>sin prisa</span><img src="assets/logo/numah-isotipo-green.png" alt=""><span>lo de siempre</span><img src="assets/logo/numah-isotipo-green.png" alt=""><span>keto, también</span><img src="assets/logo/numah-isotipo-green.png" alt=""><span>refreshers</span><img src="assets/logo/numah-isotipo-green.png" alt="">
+      <span>sin prisa</span><img src="assets/logo/numah-isotipo-green.webp" alt="" loading="lazy" decoding="async"><span>lo de siempre</span><img src="assets/logo/numah-isotipo-green.webp" alt="" loading="lazy" decoding="async"><span>keto, también</span><img src="assets/logo/numah-isotipo-green.webp" alt="" loading="lazy" decoding="async"><span>refreshers</span><img src="assets/logo/numah-isotipo-green.webp" alt="" loading="lazy" decoding="async">
     </div></div>
   </section>
 
@@ -120,7 +525,7 @@
   <!-- Manifesto -->
   <section class="mani" aria-label="Nuestra manera">
     <p class="mani-text" data-scrub>
-      Tostamos en pequeños lotes <span class="mani-pic" style="--img:url(assets/illustrations/menu/espresso.png)"></span>, horneamos cada mañana <span class="mani-pic alt" style="--img:url(assets/illustrations/menu/concha-chocolate.png)"></span> y servimos sin prisa. Aquí el café se toma con calma, <em>aunque tu día no.</em>
+      Tostamos en pequeños lotes <span class="mani-pic" data-img="assets/illustrations/menu/espresso.webp"></span>, horneamos cada mañana <span class="mani-pic alt" data-img="assets/illustrations/menu/concha-chocolate.webp"></span> y servimos sin prisa. Aquí el café se toma con calma, <em>aunque tu día no.</em>
     </p>
   </section>
 
@@ -138,7 +543,7 @@
       </div>
       <div class="slot reveal" aria-live="polite">
         <div class="slot-tile" data-slot-tile>
-          <img class="slot-img" data-slot-img src="assets/illustrations/menu/latte.png" alt="">
+          <img class="slot-img" data-slot-img src="assets/illustrations/menu/latte.webp" alt="" loading="lazy" decoding="async">
           <span class="slot-burst" aria-hidden="true"></span>
         </div>
         <div class="slot-meta">
@@ -181,7 +586,7 @@
       </div>
       <div class="stampcard reveal" data-stampcard>
         <div class="stampcard-head">
-          <img src="assets/logo/numah-wordmark-green.png" alt="numah">
+          <img src="assets/logo/numah-wordmark-green.webp" alt="numah" loading="lazy" decoding="async">
           <span>tarjeta de sellos</span>
         </div>
         <div class="stamps" data-stamps></div>
@@ -195,10 +600,10 @@
       <div class="visit-copy">
         <span class="overline reveal">Visítanos</span>
         <h2 class="h2 reveal" data-split-words>te esperamos en barra</h2>
-        <div class="reveal">
-          <div class="visit-store">The Village At La Rioja</div>
+        <address class="reveal">
+          <div class="visit-store">Numah · The Village At La Rioja</div>
           <div class="visit-addr">Av. Cervera del Río 85, Privadas Residenciales, La Rioja, 64988 Monterrey, N.L.</div>
-        </div>
+        </address>
         <div class="visit-hours reveal">
           <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
           <div><b>Horario</b><span>Por confirmar</span></div>
@@ -218,7 +623,7 @@
         <span class="map-tree t1"></span><span class="map-tree t2"></span><span class="map-tree t3"></span>
         <div class="map-pin">
           <span class="map-pin-ring"></span>
-          <span class="map-pin-body"><img src="assets/logo/numah-isotipo-cream.png" alt=""></span>
+          <span class="map-pin-body"><img src="assets/logo/numah-isotipo-cream.webp" alt="" loading="lazy" decoding="async"></span>
           <span class="map-pin-label">The Village</span>
         </div>
       </div>
@@ -238,16 +643,16 @@
       <a class="btn btn-outline-cream btn-sm" href="#" data-magnet>WhatsApp</a>
     </div>
   </div>
-  <div class="foot-word" aria-hidden="true"><img src="assets/logo/numah-wordmark-cream.png" alt=""></div>
+  <div class="foot-word" aria-hidden="true"><img src="assets/logo/numah-wordmark-cream.webp" alt="" loading="lazy" decoding="async"></div>
   <div class="wrap foot-legal">
-    <span>Hecho con calma en Monterrey</span>
+    <span>Numah · Cafetería de especialidad · Av. Cervera del Río 85, La Rioja, Monterrey, N.L.</span>
     <span>© 2026 Numah · Monterrey, N.L.</span>
   </div>
 </footer>
 
 <!-- Mobile sticky CTA -->
 <a class="mcta" href="#menu" aria-hidden="true" tabindex="-1">
-  <img src="assets/logo/numah-isotipo-cream.png" alt="">
+  <img src="assets/logo/numah-isotipo-cream.webp" alt="" loading="lazy" decoding="async">
   Ver el menú
 </a>
 

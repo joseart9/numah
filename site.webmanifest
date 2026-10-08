@@ -1,0 +1,13 @@
+{
+  "name": "Numah · café sin prisa",
+  "short_name": "Numah",
+  "lang": "es-MX",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#fcf9f1",
+  "theme_color": "#36583c",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
