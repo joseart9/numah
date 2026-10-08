@@ -1,0 +1,16 @@
+:root{
+/* Substitutes — the Numah wordmark is custom lettering; no brand typeface files were supplied. */
+--font-display:'Fredoka','Figtree',ui-rounded,system-ui,sans-serif;
+--font-heading:'Shrikhand','Fredoka',Georgia,serif; /* section & hero headings only */
+--font-body:'Figtree',system-ui,-apple-system,sans-serif;
+--weight-regular:400;--weight-medium:500;--weight-semibold:600;--weight-bold:700;
+--text-display-xl:80px;--text-display-l:60px;--text-display-m:44px;--text-h1:36px;--text-h2:28px;--text-h3:22px;--text-h4:18px;
+--text-body-l:18px;--text-body:16px;--text-body-s:14px;--text-caption:13px;--text-overline:12px;
+--leading-tight:1.02;--leading-snug:1.15;--leading-normal:1.5;--leading-relaxed:1.65;
+--tracking-display:-0.02em;--tracking-normal:0;--tracking-overline:0.12em;
+/* Semantic roles */
+--type-display:var(--weight-semibold) var(--text-display-l)/var(--leading-tight) var(--font-display);
+--type-heading:var(--weight-semibold) var(--text-h2)/var(--leading-snug) var(--font-display);
+--type-body:var(--weight-regular) var(--text-body)/var(--leading-normal) var(--font-body);
+--type-label:var(--weight-semibold) var(--text-body-s)/1.2 var(--font-body);
+}
