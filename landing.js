@@ -149,6 +149,7 @@
   /* ---------- Hero parallax (pointer + scroll) ---------- */
   const hero = $('.hero');
   const depthEls = $$('[data-depth]');
+  const stackedHero = window.matchMedia('(max-width: 860px)');
   let ptr = { x: 0, y: 0 };
   if (FINE && !RM) hero.addEventListener('pointermove', e => {
     const r = hero.getBoundingClientRect();
@@ -576,11 +577,13 @@
       const hh = hero.offsetHeight;
       if (y < hh) {
         pp.x += (ptr.x - pp.x) * .08; pp.y += (ptr.y - pp.y) * .08;
+        // stacked (mobile/tablet) hero: no scroll drift, the art sits right under the CTAs
+        const drift = stackedHero.matches ? 0 : 1;
         depthEls.forEach(el => {
           const d = +el.dataset.depth;
           const m = el.classList.contains('floater') ? 0 : 1; // floating drawings ignore the mouse, only drift on scroll
           el.style.setProperty('--px', (pp.x * d * 50 * m).toFixed(2) + 'px');
-          el.style.setProperty('--py', (pp.y * d * 50 * m - y * d * .18).toFixed(2) + 'px');
+          el.style.setProperty('--py', (pp.y * d * 50 * m - y * d * .18 * drift).toFixed(2) + 'px');
         });
       }
       const a = badgeAnim();
